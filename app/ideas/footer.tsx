@@ -78,12 +78,12 @@ export default function Footer() {
                         </a>
                     </div>
                     <div className="footer-btn-group share-group">
-                        <p className="footer-label label-desktop">讚美好因為你滾動~</p>
+                        <p className="footer-label label-desktop">讓美好因為你流動~</p>
                         <a className="footer__btn" href="mailto:pmp@conflux-tech.com">
                             Share
                         </a>
                     </div>
-                    <p className="footer-label label-mobile">讚美好因為你滾動~</p>
+                    <p className="footer-label label-mobile">讓美好因為你流動~</p>
                     <div className="footer-legal-group">
                         <div className="legal">
                             <div className="legal__links">
