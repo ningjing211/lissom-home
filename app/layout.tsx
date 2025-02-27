@@ -12,15 +12,15 @@ export const metadata: Metadata = {
   },
   description:
     '純粹而極致的設計，勾勒出空間的尊貴格調。高品質木材與精湛工藝相結合，每一筆紋理皆訴說著時光的故事。這不只是家具，而是一種生活態度。',
-  metadataBase: new URL('https://lissom.vercel.app'),
+  metadataBase: new URL('https://lissom-home.vercel.app'),
   applicationName: 'Lissom',
   openGraph: {
     type: 'website',
-    siteName: 'lissom.vercel.app',
-    url: 'https://lissom.vercel.app/',
+    siteName: 'lissom-home.vercel.app',
+    url: 'https://lissom-home.vercel.app/',
     images: [
       {
-        url: 'https://lissom.vercel.app/link-thumbnail.png',
+        url: 'https://lissom-home.vercel.app/link-thumbnail.png',
         width: 1200,
         height: 630,
       },
@@ -28,8 +28,8 @@ export const metadata: Metadata = {
     locale: 'zh_TW',
   },
   icons: {
-    icon: 'https://lissom.vercel.app/thumbnail-lissom.png',
-    apple: 'https://lissom.vercel.app/thumbnail-lissom.png',
+    icon: 'https://lissom-home.vercel.app/thumbnail-lissom.png',
+    apple: 'https://lissom-home.vercel.app/thumbnail-lissom.png',
   }
 };
 
