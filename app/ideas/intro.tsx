@@ -29,7 +29,7 @@ export default function Intro() {
                         LISSOM CASA由一群對設計與空間高度敏銳的選品人、策展人、與藝術愛好者共同組成，致力於尋找那些擁有細膩工藝、材質美學與空間靈魂的作品，並將它們帶入日常，使美學不再遙遠。
                         </p>
                         <div className="spacer-small" />
-                        <p className="text-size-large">
+                        <p className="text-size-large font-bold">
                         我們的理念建立在三個核心價值之上：
                         </p>
                         <div className="spacer-small" />
@@ -56,7 +56,7 @@ export default function Intro() {
                         我們融合藝廊策展邏輯於展示空間，讓家具與藝術共存，讓材質與線條對話，讓日常使用的物件也能成為沉浸感體驗的一部分。我們相信，美學應該是自然流動的，而非高高在上的。
                         </p>
                         <div className="spacer-small" />
-                        <p className="text-size-large">
+                        <p className="text-size-large font-bold">
                         我們希望吸引的，是願意花時間與空間對話的人
                         </p>
                         <div className="spacer-small" />
