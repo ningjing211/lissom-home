@@ -189,11 +189,270 @@ background: #ffffff;
 @keyframes zoomOut {
   from {
     opacity: 0;
-    transform: scale(1.2);
+    transform: scale(1.3);
   }
   to {
     opacity: 1;
     transform: scale(1);
+  }
+}
+
+/* 新增流程設計樣式 */
+.new-order-process-area {
+  background: #f8f8f8;
+  padding: 80px 0;
+}
+
+.process-title-container {
+  text-align: center;
+  margin-bottom: 60px;
+}
+
+.process-title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 32px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  letter-spacing: 2px;
+}
+
+.all-container {
+  display: flex;
+  max-width: 1200px;
+  margin: 0 auto;
+  gap: 60px;
+  padding: 0 20px;
+}
+
+.left-container {
+  flex: 0 0 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-item {
+  background: white;
+  padding: 25px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: all 0.3s ease;
+  cursor: pointer;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-size: 14px;
+}
+
+.step-item:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+}
+
+.step-number {
+  font-family: 'Oswald', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #666;
+  letter-spacing: 1px;
+  margin-bottom: 8px;
+}
+
+.step-title {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 18px;
+  font-weight: 600;
+  color: #333;
+  margin: 0;
+  line-height: 1.4;
+}
+
+.right-container {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 30px;
+}
+
+.step-detail {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  opacity: 0.7;
+  transition: all 0.3s ease;
+  height: 120px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.step-detail.active {
+  opacity: 1;
+  transform: scale(1.02);
+}
+
+.step-detail h4 {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 600;
+  color: #333;
+  margin: 0 0 12px 0;
+  line-height: 1.4;
+}
+
+.step-detail div {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  font-weight: 400;
+  color: #666;
+  line-height: 1.5;
+  margin: 0;
+}
+
+.step-detail * {
+  font-size: 14px;
+}
+
+/* Mobile和Desktop顯示控制 */
+.mobile-only {
+  display: none;
+}
+
+.desktop-only {
+  display: block;
+}
+
+/* 響應式設計 */
+@media screen and (max-width: 1024px) {
+  .all-container {
+    flex-direction: column;
+    gap: 40px;
+  }
+  
+  .left-container {
+    flex: none;
+    flex-direction: row;
+    flex-wrap: wrap;
+    gap: 20px;
+  }
+  
+  .step-item {
+    flex: 1;
+    min-width: 200px;
+    height: 100px;
+  }
+  
+  .step-detail {
+    height: auto;
+    min-height: 100px;
+  }
+  
+  .mobile-only {
+    display: none;
+  }
+  
+  .desktop-only {
+    display: block;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .new-order-process-area {
+    padding: 60px 0;
+  }
+  
+  .process-title {
+    font-size: 24px;
+  }
+  
+  .all-container {
+    padding: 0 15px;
+  }
+  
+  .left-container {
+    flex-direction: column;
+  }
+  
+  .step-item {
+    min-width: auto;
+    height: 80px;
+  }
+  
+  .step-detail {
+    padding: 20px;
+    height: auto;
+    min-height: 80px;
+  }
+  
+  .step-detail h4 {
+    font-size: 14px;
+  }
+  
+  .step-detail div {
+    font-size: 14px;
+  }
+  
+  .step-detail * {
+    font-size: 14px;
+  }
+  
+  /* Mobile版本顯示控制 */
+  .mobile-only {
+    display: block;
+  }
+  
+  .desktop-only {
+    display: none;
+  }
+  
+  /* Mobile版本中，step-detail在left-container中的樣式 */
+  .left-container .step-detail {
+    margin-top: 15px;
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .new-order-process-area {
+    padding: 40px 0;
+  }
+  
+  .process-title {
+    font-size: 20px;
+  }
+  
+  .all-container {
+    padding: 0 10px;
+  }
+  
+  .step-item {
+    padding: 20px;
+    height: 70px;
+  }
+  
+  .step-title {
+    font-size: 16px;
+  }
+  
+  .step-detail {
+    padding: 15px;
+    height: auto;
+    min-height: 70px;
+  }
+  
+  .step-detail h4 {
+    font-size: 14px;
+  }
+  
+  .step-detail div {
+    font-size: 14px;
+  }
+  
+  .step-detail * {
+    font-size: 14px;
   }
 }
 

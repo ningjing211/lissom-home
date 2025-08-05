@@ -25,36 +25,133 @@ export default function Parallax() {
         <section>
           <div id="brand" className="title">
             {/* <h3>Ever Changing</h3> */}
-            <h1>我們的核心價值</h1>
+            <h1>服務項目</h1>
           </div>
         </section>
         <section  id="origin">
           <div className="parallax-core_value-one animate-fadeInUp">
-            <h2>沈靜品質</h2>
+            <h2>傾聽想像</h2>
           </div>
         </section>
         
         <section className="section-words">
           <div id="story" className="block">
-            <p>在平靜與安寧的禮遇下，我們躺臥在智能與自然的兩條河水交接處的大石上，以數據分析優化材料的選用，確保每一份生長都被精彩得轉換，提升價值。遠古文明與現代科技的交融，在瀰漫香氣的原木客廳裡，躺下一座浩瀚的悠閒自在。</p>
+            <p>我們理解，空間的成形從來不是單一決策，而是一場協作。設計不只需要創意，更需要在現實條件中找到可行的路徑。從風格脈絡到產品整合、從材質掌握到預算拿捏，我們將設計端的語言，轉譯為精準落地的選品與執行配合。讓空間概念被具象化的選配策略與軟裝顧問角色。無論是什麼樣的空間，都能在質感、比例與時間進程中，被確實完成。</p>
           </div>
         </section>
         
         <section>
         <div className="parallax-core_value-two animate-slideInLeft">
-            <h2>品牌意識</h2>
+            <h2>訂製軟裝家具流程</h2>
           </div>
         </section>
 
-        <section className="section-words">
+        <section className="new-order-process-area section-words">
           <div className="block">
-            <p>旅人以地球為家，讓生態鏈更純粹，不只是打造家具，而是重新思考產品如何與世界共存。從森林到工廠，從運輸到最終進入您的家，每一道流程都經過嚴格評估，降低碳排，減少資源浪費。我們深知，家具不只是「物」，而是與大地、海洋、未來子民共生的環節。因此，我們從選材開始，採用可持續木材，並監控供應鏈碳足跡；運輸階段，優化路線減少能源消耗；工廠端，導入智能生產技術，降低製造過程中的碳排與污染。我們相信，真正的美學與奢華，來自對地球的敬畏，我們只拿我們需要的，把剩餘的美好留給海洋、森林與未來的生命。</p>
+            
+            <div className="all-container">
+              <div className="left-container">
+                <div className="step-item">
+                  <div className="step-number">STEP 1</div>
+                  <div className="step-title">初步討論</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="1">
+                  <h4>進行初步討論了解空間佈局、風格及居住者喜好</h4>
+                  <div>建議提供平面圖、情境照、3D風格方向</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 2</div>
+                  <div className="step-title">配置提案討論</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="2">
+                  <h4>彙整需求提出配置提案</h4>
+                  <div>透過簡報展示陳列位置及款式細節，協助確認的品項並進行材質挑選</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 3</div>
+                  <div className="step-title">報價與簽訂</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="3">
+                  <h4>確定最終方案</h4>
+                  <div>按照確認的品項及尺寸材質提供報價並進行簽約</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 4</div>
+                  <div className="step-title">尺寸丈量</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="4">
+                  <h4>在簽訂確認後，我們將至現場進行精確丈量</h4>
+                  <div>確保傢俱擺放位置、尺寸與動線無誤</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 5</div>
+                  <div className="step-title">下單製作</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="5">
+                  <h4>與匠工確認所有細節，施工圖面核對把關</h4>
+                  <div>製作工期約4-6週</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 6</div>
+                  <div className="step-title">時程品質把控</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="6">
+                  <h4>製作過程品質監控</h4>
+                  <div>為客製細節與進度進行把控</div>
+                </div>
+                
+                <div className="step-item">
+                  <div className="step-number">STEP 7</div>
+                  <div className="step-title">完成交付</div>
+                </div>
+                <div className="step-detail mobile-only" data-step="7">
+                  <h4>安排專業司機送至現場</h4>
+                  <div>家具進行組裝定位，驗貨點交，完成交付</div>
+                </div>
+              </div>
+              
+              <div className="right-container">
+                <div className="step-detail desktop-only" data-step="1">
+                  <h4>進行初步討論了解空間佈局、風格及居住者喜好</h4>
+                  <div>建議提供平面圖、情境照、3D風格方向</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="2">
+                  <h4>彙整需求提出配置提案</h4>
+                  <div>透過簡報展示陳列位置及款式細節，協助確認的品項並進行材質挑選</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="3">
+                  <h4>確定最終方案</h4>
+                  <div>按照確認的品項及尺寸材質提供報價並進行簽約</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="4">
+                  <h4>在簽訂確認後，我們將至現場進行精確丈量</h4>
+                  <div>確保傢俱擺放位置、尺寸與動線無誤</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="5">
+                  <h4>與匠工確認所有細節，施工圖面核對把關</h4>
+                  <div>製作工期約4-6週</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="6">
+                  <h4>製作過程品質監控</h4>
+                  <div>為客製細節與進度進行把控</div>
+                </div>
+                <div className="step-detail desktop-only" data-step="7">
+                  <h4>安排專業司機送至現場</h4>
+                  <div>家具進行組裝定位，驗貨點交，完成交付</div>
+                </div>
+              </div>
+            </div>
           </div>
         </section>
 
-        <section  >
+        {/* <section  >
         <div className="parallax-core_value-three animate-zoomIn">
-            <h2>產品決策</h2>
+            <h2>實現藍圖</h2>
           </div>
         </section>
 
@@ -67,9 +164,9 @@ export default function Parallax() {
 
           
 
-        </section>
+        </section> */}
 
-        <section>
+        {/* <section>
         <div className="parallax-core_value-four animate-zoomOut">
             <h2>客戶體驗</h2>
           </div>
@@ -84,7 +181,7 @@ export default function Parallax() {
 
           
 
-        </section>
+        </section> */}
 
       </div>
     );

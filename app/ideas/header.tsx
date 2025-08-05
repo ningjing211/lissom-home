@@ -18,7 +18,7 @@ export default function Header() {
                     className="header-menu-link alice-regular"
                     href="/philosophy"
                     >
-                    Philo
+                    About
                     </a>
                 </li>
                 <li>
@@ -26,7 +26,7 @@ export default function Header() {
                     className="header-menu-link alice-regular"
                     href="/core_value"
                     >
-                    Value
+                    Service
                     </a>
                 </li>
                 <li>
@@ -34,7 +34,7 @@ export default function Header() {
                     className="header-menu-link alice-regular"
                     href="/roots"
                     >
-                    Roots
+                    Lissom Gallery
                     </a>
                 </li>
                 <li>
@@ -42,7 +42,7 @@ export default function Header() {
                     className="header-menu-link alice-regular"
                     href="/vision"
                     >
-                    Vision
+                    Living Inspiration
                     </a>
                 </li>
                 <li>
