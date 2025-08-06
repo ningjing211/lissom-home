@@ -1,63 +1,60 @@
+'use client';
+
+import { useState } from 'react';
 import '@/app/ui/ideas/header.css';
 
 export default function Header() {
+    const [isMenuOpen, setIsMenuOpen] = useState(false);
+
+    const toggleMenu = () => {
+        setIsMenuOpen(!isMenuOpen);
+    };
+
+    const closeMenu = () => {
+        setIsMenuOpen(false);
+    };
+
     return (
         <header>
             <nav className="header-nav container flex-container">
                 <h1 className="logo">
-                <a
-                    className="logo-link"
-                    href="/"
-                >
-                    <img src="/logoB-web.png" />
-                </a>
+                    <a className="logo-link" href="/">
+                        <img src="/logoB-web.png" alt="LISSOM CASA" />
+                    </a>
                 </h1>
-                <ul className="header-menu flex-container">
-                <li>
-                    <a
-                    className="header-menu-link alice-regular"
-                    href="/philosophy"
-                    >
-                    About
-                    </a>
-                </li>
-                <li>
-                    <a
-                    className="header-menu-link alice-regular"
-                    href="/core_value"
-                    >
-                    Service
-                    </a>
-                </li>
-                <li>
-                    <a
-                    className="header-menu-link alice-regular"
-                    href="/roots"
-                    >
-                    Lissom Gallery
-                    </a>
-                </li>
-                <li>
-                    <a
-                    className="header-menu-link alice-regular"
-                    href="/vision"
-                    >
-                    Living Inspiration
-                    </a>
-                </li>
-                <li>
-                    <a
-                    className="header-menu-link alice-regular"
-                    href="/blog/index.html"
-                    >
-                    Blog
-                    </a>
-                </li>
-                </ul>
-                {/* <button className="ghost-button">
-                Subscribe
-                </button> */}
+                
+                {/* 菜單按鈕 */}
+                <button 
+                    className={`menu-toggle ${isMenuOpen ? 'active' : ''}`}
+                    onClick={toggleMenu}
+                    aria-label="Toggle menu"
+                >
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </button>
+                
+                <div className={`menu-main-links ${isMenuOpen ? 'active' : ''}`}>
+                    {/* 主要菜單 */}
+                    <div className="w-layout-vflex flex-block-4">
+                        <a href="/philosophy" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>About</div>
+                        </a>
+                        <a href="/core_value" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>Service</div>
+                        </a>
+                        <a href="/roots" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>Lissom Gallery</div>
+                        </a>
+                        <a href="/vision" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>Living Inspiration</div>
+                        </a>
+                        <a href="/blog/index.html" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>Blog</div>
+                        </a>
+                    </div>
+                </div>
             </nav>
-
-            </header>
-)};
+        </header>
+    );
+}

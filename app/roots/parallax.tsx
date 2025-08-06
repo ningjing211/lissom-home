@@ -24,9 +24,9 @@ export default function Parallax() {
   return (
         <div id="parallax-world-of-ugg">
         <section>
-          <div id="brand" className="title">
+          <div id="brand" className="title" style={{marginTop: '70px'}}>
             {/* <h3>Ever Changing</h3> */}
-            <h1>我們的緣起</h1>
+            <h1 style={{textAlign: 'center'}}>里山的藝廊</h1>
           </div>
         </section>
         <section  id="origin">

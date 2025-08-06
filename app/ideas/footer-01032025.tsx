@@ -72,35 +72,7 @@ export default function Footer() {
                         </li>
                         </ul>
                     </li> */}
-                    <li className="nav__item nav__item--extra">
-                        <h2 className="nav__title">
-                        Social Media
-                        </h2>
-                        <ul className="nav__ul nav__ul--extra">
-                        <li>
-                            <a href="#">
-                            Facebook
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            Instagram
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            Thread
-                            </a>
-                        </li>
-                        <li>
-                            <a href="#">
-                            Line
-                            </a>
-                        </li>
-        
-                    
-                        </ul>
-                    </li>
+
                     <li className="nav__item">
                         <h2 className="nav__title">
                         Legal

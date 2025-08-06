@@ -5,9 +5,9 @@ export default function Parallax() {
     return (
         <div id="parallax-world-of-ugg">
         <section>
-          <div id="brand" className="title">
+          <div id="brand" className="title" >
             {/* <h3>Ever Changing</h3> */}
-            <h1>我們的願景</h1>
+            <h1>生活的啟發</h1>
           </div>
         </section>
         <section  id="origin">
