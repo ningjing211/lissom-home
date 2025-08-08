@@ -198,9 +198,9 @@ background: #ffffff;
   }
 }
 
-/* 新增流程設計樣式 */
+/* 新增流程設計樣式 - 左右分欄版本 */
 .new-order-process-area {
-  background: #f8f8f8;
+  background: #f8f6f3;
   padding: 80px 0;
 }
 
@@ -211,208 +211,141 @@ background: #ffffff;
 
 .process-title {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 32px;
-  font-weight: 600;
-  color: #333;
-  margin: 0;
+  font-size: 36px;
+  font-weight: 500;
+  color: #4a4a4a;
+  margin: 0 0 15px 0;
   letter-spacing: 2px;
 }
 
-.all-container {
-  display: flex;
-  max-width: 1200px;
-  margin: 0 auto;
-  gap: 60px;
-  padding: 0 20px;
+.process-subtitle {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 24px;
+  color: #494949;
+  margin: 0;
+  font-weight: 600;
+  letter-spacing: 1px;
 }
 
-.left-container {
-  flex: 0 0 300px;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+.process-steps-container {
+  max-width: 1000px;
+  margin: 0 auto;
+  padding: 0 40px;
 }
 
 .step-item {
-  background: white;
-  padding: 25px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
-  cursor: pointer;
-  height: 120px;
   display: flex;
-  flex-direction: column;
-  justify-content: center;
-  font-size: 14px;
+  align-items: flex-start;
+  padding: 35px 0;
+  border-bottom: 1px solid #e8e5e1;
+  transition: all 0.3s ease;
+}
+
+.step-item:last-child {
+  border-bottom: none;
 }
 
 .step-item:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 8px 25px rgba(0, 0, 0, 0.15);
+  background: rgba(255, 255, 255, 0.5);
+  padding-left: 20px;
+  padding-right: 20px;
+  margin-left: -20px;
+  margin-right: -20px;
+  border-radius: 8px;
+}
+
+.step-header {
+  flex: 0 0 280px;
+  display: flex;
+  align-items: center;
+  padding-right: 30px;
 }
 
 .step-number {
-  font-family: 'Oswald', sans-serif;
+  font-family: 'Noto Sans TC', sans-serif;
   font-size: 14px;
   font-weight: 600;
-  color: #666;
+  color: #8a8a8a;
   letter-spacing: 1px;
-  margin-bottom: 8px;
+  margin-right: 8px;
+}
+
+.step-divider {
+  font-family: 'Noto Sans TC', sans-serif;
+  font-size: 14px;
+  color: #c4c4c4;
+  margin-right: 12px;
 }
 
 .step-title {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 18px;
-  font-weight: 600;
-  color: #333;
+  font-size: 16px;
+  letter-spacing: 1px;
+  font-weight: 500;
+  color: #4a4a4a;
   margin: 0;
   line-height: 1.4;
 }
 
-.right-container {
+.step-description {
   flex: 1;
-  display: flex;
-  flex-direction: column;
-  gap: 30px;
+  padding-left: 20px;
 }
 
-.step-detail {
-  background: white;
-  padding: 30px;
-  border-radius: 8px;
-  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
-  opacity: 0.7;
-  transition: all 0.3s ease;
-  height: 120px;
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.step-detail.active {
-  opacity: 1;
-  transform: scale(1.02);
-}
-
-.step-detail h4 {
+.step-description p {
   font-family: 'Noto Sans TC', sans-serif;
-  font-size: 14px;
-  font-weight: 600;
-  color: #333;
-  margin: 0 0 12px 0;
-  line-height: 1.4;
-}
-
-.step-detail div {
-  font-family: 'Noto Sans TC', sans-serif;
-  font-size: 14px;
+  font-size: 11px;
   font-weight: 400;
-  color: #666;
-  line-height: 1.5;
-  margin: 0;
+  color: #6a6a6a;
+  line-height: 1.6;
+  margin: 0 0 10px 0;
 }
 
-.step-detail * {
-  font-size: 14px;
-}
-
-/* Mobile和Desktop顯示控制 */
-.mobile-only {
-  display: none;
-}
-
-.desktop-only {
-  display: block;
+.step-description p:last-child {
+  margin-bottom: 0;
 }
 
 /* 響應式設計 */
-@media screen and (max-width: 1024px) {
-  .all-container {
-    flex-direction: column;
-    gap: 40px;
-  }
-  
-  .left-container {
-    flex: none;
-    flex-direction: row;
-    flex-wrap: wrap;
-    gap: 20px;
-  }
-  
-  .step-item {
-    flex: 1;
-    min-width: 200px;
-    height: 100px;
-  }
-  
-  .step-detail {
-    height: auto;
-    min-height: 100px;
-  }
-  
-  .mobile-only {
-    display: none;
-  }
-  
-  .desktop-only {
-    display: block;
-  }
-}
-
 @media screen and (max-width: 768px) {
   .new-order-process-area {
     padding: 60px 0;
   }
   
   .process-title {
-    font-size: 24px;
+    font-size: 28px;
   }
   
-  .all-container {
-    padding: 0 15px;
+  .process-subtitle {
+    font-size: 16px;
   }
   
-  .left-container {
-    flex-direction: column;
+  .process-steps-container {
+    padding: 0 20px;
   }
   
   .step-item {
-    min-width: auto;
-    height: 80px;
+    flex-direction: column;
+    padding: 25px 0;
+    display: flex;
+    justify-content: center;
   }
   
-  .step-detail {
-    padding: 20px;
-    height: auto;
-    min-height: 80px;
-  }
-  
-  .step-detail h4 {
-    font-size: 14px;
-  }
-  
-  .step-detail div {
-    font-size: 14px;
-  }
-  
-  .step-detail * {
-    font-size: 14px;
-  }
-  
-  /* Mobile版本顯示控制 */
-  .mobile-only {
-    display: block;
-  }
-  
-  .desktop-only {
-    display: none;
-  }
-  
-  /* Mobile版本中，step-detail在left-container中的樣式 */
-  .left-container .step-detail {
-    margin-top: 15px;
+  .step-header {
+    flex: none;
     margin-bottom: 15px;
+    padding-right: 0;
+  }
+  
+  .step-description {
+    padding-left: 0;
+  }
+  
+  .step-title {
+    font-size: 16px;
+  }
+  
+  .step-description p {
+    font-size: 12px;
   }
 }
 
@@ -422,38 +355,40 @@ background: #ffffff;
   }
   
   .process-title {
-    font-size: 20px;
+    font-size: 24px;
   }
   
-  .all-container {
-    padding: 0 10px;
+  .process-subtitle {
+    font-size: 14px;
+
+  }
+  
+  .process-steps-container {
+    padding: 0 15px;
   }
   
   .step-item {
-    padding: 20px;
-    height: 70px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
+  }
+  
+  .step-header {
+    margin-bottom: 12px;
+  }
+  
+  .step-number {
+    font-size: 12px;
   }
   
   .step-title {
-    font-size: 16px;
+    font-size: 15px;
   }
   
-  .step-detail {
-    padding: 15px;
-    height: auto;
-    min-height: 70px;
-  }
-  
-  .step-detail h4 {
+  .step-description p,
+  .step-description div {
     font-size: 14px;
-  }
-  
-  .step-detail div {
-    font-size: 14px;
-  }
-  
-  .step-detail * {
-    font-size: 14px;
+    line-height: 1.6;
   }
 }
 

@@ -73,7 +73,7 @@ export default function Page() {
             <Wall />
             {/* <NumberShows /> */}
             {/* <Items /> */}
-            <Featured />
+            {/* <Featured /> */}
             
           </div>
           <Footer />

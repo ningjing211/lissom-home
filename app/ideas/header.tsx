@@ -38,19 +38,19 @@ export default function Header() {
                     {/* 主要菜單 */}
                     <div className="w-layout-vflex flex-block-4">
                         <a href="/philosophy" className="menu-link w-inline-block" onClick={closeMenu}>
-                            <div>About</div>
+                            <div>關於我們 About</div>
                         </a>
                         <a href="/core_value" className="menu-link w-inline-block" onClick={closeMenu}>
-                            <div>Service</div>
+                            <div>服務項目 Service</div>
                         </a>
                         <a href="/roots" className="menu-link w-inline-block" onClick={closeMenu}>
-                            <div>Lissom Gallery</div>
+                            <div>藝廊空間 Lissom Gallery</div>
                         </a>
                         <a href="/vision" className="menu-link w-inline-block" onClick={closeMenu}>
-                            <div>Living Inspiration</div>
+                            <div>空間靈感 Living Inspiration</div>
                         </a>
-                        <a href="/blog/index.html" className="menu-link w-inline-block" onClick={closeMenu}>
-                            <div>Blog</div>
+                        <a href="mailto:casalissom@gmail.com" className="menu-link w-inline-block" onClick={closeMenu}>
+                            <div>聯繫我們 Contact</div>
                         </a>
                     </div>
                 </div>

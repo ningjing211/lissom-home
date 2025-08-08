@@ -40,108 +40,93 @@ export default function Parallax() {
           </div>
         </section>
         
-        <section>
-        <div className="parallax-core_value-two animate-slideInLeft">
-            <h2>訂製軟裝家具流程</h2>
-          </div>
-        </section>
-
         <section className="new-order-process-area section-words">
-          <div className="block">
+          <div className="">
+            <div className="process-title-container">
+              <div className="process-subtitle">訂製軟裝傢俱流程 Procedure</div>
+            </div>
             
-            <div className="all-container">
-              <div className="left-container">
-                <div className="step-item">
-                  <div className="step-number">STEP 1</div>
+            <div className="process-steps-container">
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 1</span>
+                  <span className="step-divider">｜</span>
                   <div className="step-title">初步討論</div>
                 </div>
-                <div className="step-detail mobile-only" data-step="1">
-                  <h4>進行初步討論了解空間佈局、風格及居住者喜好</h4>
+                <div className="step-description">
+                  <div>進行初步討論了解空間佈局、風格及居住者喜好</div>
                   <div>建議提供平面圖、情境照、3D風格方向</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 2</div>
-                  <div className="step-title">配置提案討論</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="2">
-                  <h4>彙整需求提出配置提案</h4>
-                  <div>透過簡報展示陳列位置及款式細節，協助確認的品項並進行材質挑選</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 3</div>
-                  <div className="step-title">報價與簽訂</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="3">
-                  <h4>確定最終方案</h4>
-                  <div>按照確認的品項及尺寸材質提供報價並進行簽約</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 4</div>
-                  <div className="step-title">尺寸丈量</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="4">
-                  <h4>在簽訂確認後，我們將至現場進行精確丈量</h4>
-                  <div>確保傢俱擺放位置、尺寸與動線無誤</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 5</div>
-                  <div className="step-title">下單製作</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="5">
-                  <h4>與匠工確認所有細節，施工圖面核對把關</h4>
-                  <div>製作工期約4-6週</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 6</div>
-                  <div className="step-title">時程品質把控</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="6">
-                  <h4>製作過程品質監控</h4>
-                  <div>為客製細節與進度進行把控</div>
-                </div>
-                
-                <div className="step-item">
-                  <div className="step-number">STEP 7</div>
-                  <div className="step-title">完成交付</div>
-                </div>
-                <div className="step-detail mobile-only" data-step="7">
-                  <h4>安排專業司機送至現場</h4>
-                  <div>家具進行組裝定位，驗貨點交，完成交付</div>
                 </div>
               </div>
               
-              <div className="right-container">
-                <div className="step-detail desktop-only" data-step="1">
-                  <h4>進行初步討論了解空間佈局、風格及居住者喜好</h4>
-                  <div>建議提供平面圖、情境照、3D風格方向</div>
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 2</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">配置提案討論</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="2">
-                  <h4>彙整需求提出配置提案</h4>
+                <div className="step-description">
+                  <div>彙整需求提出配置提案</div>
                   <div>透過簡報展示陳列位置及款式細節，協助確認的品項並進行材質挑選</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="3">
-                  <h4>確定最終方案</h4>
+              </div>
+              
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 3</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">報價與簽訂</div>  
+                </div>
+                <div className="step-description">
+                  <div>確定最終方案</div>
                   <div>按照確認的品項及尺寸材質提供報價並進行簽約</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="4">
-                  <h4>在簽訂確認後，我們將至現場進行精確丈量</h4>
+              </div>
+              
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 4</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">尺寸丈量</div>
+                </div>
+                <div className="step-description">
+                  <div>在簽訂確認後，我們將至現場進行精確丈量</div>
                   <div>確保傢俱擺放位置、尺寸與動線無誤</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="5">
-                  <h4>與匠工確認所有細節，施工圖面核對把關</h4>
+              </div>
+              
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 5</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">下單製作</div>
+                </div>
+                <div className="step-description">
+                  <div>與匠工確認所有細節，施工圖面核對把關</div>
                   <div>製作工期約4-6週</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="6">
-                  <h4>製作過程品質監控</h4>
+              </div>
+              
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 6</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">時程品質把控</div>
+                </div>
+                <div className="step-description">
+                  <div>製作過程品質監控</div>
                   <div>為客製細節與進度進行把控</div>
                 </div>
-                <div className="step-detail desktop-only" data-step="7">
-                  <h4>安排專業司機送至現場</h4>
+              </div>
+              
+              <div className="step-item">
+                <div className="step-header">
+                  <span className="step-number">STEP 7</span>
+                  <span className="step-divider">｜</span>
+                  <div className="step-title">完成交付</div>
+                </div>
+                <div className="step-description">
+                  <div>安排專業司機送至現場</div>
                   <div>家具進行組裝定位，驗貨點交，完成交付</div>
                 </div>
               </div>

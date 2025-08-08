@@ -12,8 +12,9 @@ header {
 }
 
 .header-nav {
+    position: relative;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     padding: 1rem 2rem;
     max-width: 1200px;
@@ -22,6 +23,9 @@ header {
 
 /* Logo 樣式 */
 .logo {
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
     margin: 0;
 }
 
@@ -80,7 +84,7 @@ header {
     right: -30%;
     width: 26%;
     height: 100vh;
-    background: #ffffffde;
+    background: #fffffffc;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -106,11 +110,11 @@ header {
 }
 
 .menu-link {
-    color: #000;
+    color: #666666;
     text-decoration: none;
     font-family: 'Noto Sans TC', sans-serif;
-    font-size: 1.2rem;
-    font-weight: 300;
+    font-size: 14px;
+    font-weight: 400;
     letter-spacing: 2px;
     text-transform: uppercase;
     transition: all 0.3s ease;
@@ -118,7 +122,7 @@ header {
 }
 
 .menu-link:hover {
-    color: #666;
+    color: #272727;
     transform: translateX(10px);
 }
 

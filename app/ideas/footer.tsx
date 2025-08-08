@@ -37,7 +37,7 @@ export default function Footer() {
                                 <address className="address">
                                     台南市安平區健康三街237號B1
                                     <br /><br />
-                                    +886 0911-637-888
+                                    06-2978816
                                     <br />
                                 </address>
                             </div>
@@ -55,16 +55,16 @@ export default function Footer() {
                 </div>
                 <div className="footer-group-right">
                     <div className="footer-btn-group">
-                        <a className="footer__btn" href="mailto:pmp@conflux-tech.com">
+                        <a className="footer__btn" href="mailto:casalissom@gmail.com">
                             Contact
                         </a>
                     </div>
-                    <div className="footer-btn-group share-group">
+                    {/* <div className="footer-btn-group share-group">
                         <p className="footer-label label-desktop">讓美好因為你流動~</p>
                         <a className="footer__btn" href="mailto:pmp@conflux-tech.com">
                             Share
                         </a>
-                    </div>
+                    </div> */}
                     <p className="footer-label label-mobile">讓美好因為你流動~</p>
                     <div className="footer-legal-group">
                         <div className="legal">
